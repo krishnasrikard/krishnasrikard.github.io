@@ -134,7 +134,13 @@ header .Menu a{
 
 /* Projects */
 #Projects{
-    background-image:linear-gradient(#efefef, rgb(255, 183, 50));
+    /*background-image:linear-gradient(#efefef, rgb(255, 183, 50));*/
+    background-color: white;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: ridge;
+    border-color: #c2c2c2;
 }
 
 #Projects h3{
@@ -178,7 +184,8 @@ header .Menu a{
 
 /* Skills */
 #Skills {
-    background-image:linear-gradient(rgb(255, 183, 50),rgb(153, 211, 246));
+    /*background-image:linear-gradient(rgb(255, 183, 50),rgb(153, 211, 246));*/
+    background-color: #efefef;
     margin: auto;
 }
 
@@ -202,7 +209,7 @@ header .Menu a{
 #Skills .S li{
     background-color: #000000;
     text-align: center;
-    color: gold;
+    color: white;
     border-color: skyblue;
     padding: 5px 5px 5px 5px;
     display: inline;
@@ -216,7 +223,13 @@ header .Menu a{
 }
 
 #Education{
-    background-image: linear-gradient(180deg, rgb(153, 211, 246), yellow);
+    /*background-image: linear-gradient(180deg, rgb(153, 211, 246), yellow);*/
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: ridge;
+    border-color: #c2c2c2;
 }
 
 #Education .Details{
@@ -265,7 +278,7 @@ footer {
     font-style: italic;
     text-align: center;
     font-size: 8pt;
-    background-color: yellowgreen;
+    /*background-color: rgb(153, 211, 246);*/
 }
 
 footer a:link{
