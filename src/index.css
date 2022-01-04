@@ -328,10 +328,17 @@ a img {
     color: rgb(0, 143, 17);
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .header .name {
         margin: 0;
         font-size: 90px
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .header .name {
+        margin: 0;
+        font-size: 40px
     }
 }
 
@@ -345,9 +352,15 @@ a img {
 	color: rgb(0, 143, 17);
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .header .details {
         font-size: 40px
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .header .details {
+        font-size: 20px
     }
 }
 
@@ -380,11 +393,19 @@ a img {
     background: #fff
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .handles-icons .icon {
         width: 35px;
         height: 35px;
         font-size: 35px
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .handles-icons .icon {
+        width: 15px;
+        height: 15px;
+        font-size: 15px
     }
 }
 
@@ -399,9 +420,15 @@ a img {
     margin: 10px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .handles-links .link {
         font-size: 20px
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    .handles-links .link {
+        font-size: 10px
     }
 }
 
@@ -443,7 +470,13 @@ a img {
     max-width: 960px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
+    #about {
+        width: 80%
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
     #about {
         width: 80%
     }
@@ -460,7 +493,7 @@ a img {
     max-width: 1080px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     #education {
         width: 80%
     }
@@ -495,6 +528,28 @@ a img {
 	font-size: medium;
     float: right;
 	color: rgb(51,51,51)
+}
+
+@media only screen and (max-device-width: 640px) {
+    #education {
+        width: 80%
+    }
+
+	.education-block college{
+		font-size: 16.5px;
+	}
+
+	.education-block span {
+		font-size: small;
+	}
+
+	.education-block degree{
+		font-size: 14.5px;
+	}
+
+	.education-block ul{
+		font-size: 12.5px;
+	}
 }
 
 #research-experience {
@@ -658,9 +713,9 @@ a img {
 	box-sizing: border-box;
 }
 
-@media (max-width: 767.98px) {
+@media only screen and (max-device-width: 640px){
 	#research-experience{
-		width: 80%;
+		width: 100%;
 	}
 
 	.timeline::after {
@@ -697,6 +752,7 @@ a img {
 	.research-container.right .date {
 		right: auto;
 		left: 15px;
+		font-size: 10px;
 	}
 
 	.research-container.left .icon,
@@ -854,9 +910,9 @@ a img {
 	box-sizing: border-box;
 }
   
-@media (max-width: 767.98px) {
+@media only screen and (max-device-width: 640px){
 	#work-experience {
-		width: 80%;
+		width: 100%;
 	}
 
 	.timeline::after {
@@ -893,6 +949,7 @@ a img {
 	.work-container.right .date {
 		right: auto;
 		left: 15px;
+		font-size: 10px;
 	}
   
 	.work-container.left .icon,
@@ -925,7 +982,7 @@ a img {
     justify-content: space-between;
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .skill {
         flex-wrap: nowrap;
         font-size: 75px
@@ -982,22 +1039,25 @@ a img {
     margin-right: 5px
 }
 
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:640px) {
     .contents-left {
         margin-left: 0;
-        width: 48%
+        width: 48%;
+		text-align: center;
     }
 
     .contents-left,
     .contents-right {
-        margin-top: -5%
+        margin-top: -5%;
+		text-align: center;
     }
 
     .contents-right,
     .images-right {
         margin-top: 0%;
         float: right;
-        width: 45%
+        width: 45%;
+		text-align: center;
     }
 
     .images-right img {
@@ -1055,8 +1115,8 @@ a img {
 	padding: 10px 0;
     margin-top: 75px;
     text-align: center;
-    color: #fff;
 	width: 100%;
+	color: rgb(255, 208, 0)
 }
 .footer a {
     text-decoration: none;
