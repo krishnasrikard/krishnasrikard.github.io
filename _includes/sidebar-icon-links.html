@@ -1,0 +1,44 @@
+<nav id="sidebar-icon-links">
+	<!-- {% if site.hydeout.repo %}
+	<a id="github-link"
+		class="icon" title="Github Project" aria-label="Github Project"
+		href="{{ site.hydeout.repo }}">
+		{% include svg/github.svg %}
+	</a>
+	{% endif %} -->
+	<a id="github-link"
+		class="icon" title="GitHub" aria-label="GitHub"
+		href="www.github.com/dks2000dks"> 
+		{% include svg/github.svg %}
+	</a>
+	<a id="resume-link"
+		class="icon" title="Resume" aria-label="Resume"
+		href="https://drive.google.com/file/d/1bzkdJFKn6ZuPwB-9Wf0r6m8y3a71YXJm/view?usp=sharing"> 
+		{% include svg/pdf.svg %}
+	</a>
+	<a id="mail-link"
+		class="icon" title="GitHub" aria-label="GitHub"
+		href="mailto:srikarkrishnad@gmail.com"> 
+		{% include svg/mail.svg %}
+	</a>
+	<a id="google-scholar-link"
+		class="icon" title="Google Scholar" aria-label="Google Scholar"
+		href="https://www.google.com/search?q=Krishna+Srikar+Durbha"> 
+		{% include svg/google-scholar.svg %}
+	</a>
+
+	{% comment %}
+	Check if we have tag or search pages page active before linking to it.
+	{% endcomment %}
+	{% assign tags_page = false %}
+	{% assign search_page = false %}
+	{% for node in site.pages %}
+		{% if node.layout == "tags" %}
+			{% assign tags_page = node %}
+		{% elsif node.layout == "search" %}
+			{% assign search_page = node %}
+		{% endif %}
+	{% endfor %}
+
+	{% include custom-icon-links.html %}
+	</nav>

@@ -1,0 +1,29 @@
+<div id="sidebar">
+	<!-- Name on Sidebar -->
+	<header>
+		<{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+		<a style="color: rgb(0, 140, 255); font-family: Ubuntu;" href="{{ "https://dks2000dks.github.io/" | relative_url }}">
+			{% unless page.url == "/" %}
+				<span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+			{% endunless %}
+			{{ site.title }}
+		</a>
+    	</{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    	<p class="lead"><img style="display: block;margin-left: auto;margin-right: auto;border-radius: 50%;height: 50%;width: 50%;" src="../assets/imgs/Me.jpg" alt="Krishna Srikar Durbha"></p>
+		<p></p>
+	</header>
+
+	<!-- References to Pages -->
+	{% include sidebar-nav-links.html %}
+
+	{% if site.version %}
+		<span class="site-version">Currently v{{ site.version }}</span>
+	{% endif %}
+
+	<!-- References to Links -->
+	{% include sidebar-icon-links.html %}
+
+	<!-- Copyright-->
+	{% include copyright.html %}
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</div>

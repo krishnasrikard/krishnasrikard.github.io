@@ -1,1 +1,122 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="imgs/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Portfolio Website"/><meta name="author" content="dks2000dks"/><meta name="keywords" content="Krishna Srikar Durbha, Krishna Srikar, Srikar Durbha, dks2000dks"/><title>Krishna Srikar Durbha</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="../src/index.css"/><script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap" rel="stylesheet"><script defer="defer" src="/static/js/main.a00e1431.js"></script><link href="/static/css/main.401d54f8.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="./js/sweet-scroll.min.js"></script><script src="./js/main.js"></script></body></html>
+---
+layout: index
+title: Home
+sidebar_sort_order: 0
+---
+<!-- Bio -->
+<h1 style="color: rgb(5, 128, 5);">Bio</h1>
+<p>I am an upcoming PhD student at the University of Texas at Austin in the Department of Electrical and Computer Engineering (ECE). I will be working at the Laboratory for Image and Video Engineering (LIVE) with Prof. Alan Bovik as a Graduate Research Assistant.</p>
+<p>I will be graduating from Indian Institute of Technology, Hyderabad with a Bachelor in Electrical Engineering. During my undergraduate year I was involved in clubs which guide students to get started with Computer Vision, Deep Learning and IoT</p>
+<p>I am interested in understanding the underlying statistics of images and using them to develop robust computer vision systems.</p>
+<br/>
+
+<!-- Research Interests -->
+<h1 style="color: rgb(5, 128, 5);">Research Interests</h1>
+<ul style="line-height:2em;">
+	<li>Computer Vision</li>
+	<li>Generative Modelling</li>
+	<li>Representation Learning</li>
+	<li>Autonomous Navigation</li>
+	<li>Deep Learning</li>
+	<li>Signal Processing</li>
+</ul>
+<br/>
+
+<!-- Skills -->
+<style>
+	.category{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.icon{
+		height: 60px; width: 60px; margin: 4% 4% 4% 4%;
+	}
+</style>
+<h1 style="color: rgb(5, 128, 5);">Skills</h1>
+
+<h3>Programming Languages</h3>
+<div class="category">
+	<img src="assets/icons/C.svg" class="icon" alt="C"></img>
+	<img src="assets/icons/C++.svg" class="icon" alt="C++"></img>
+	<img src="assets/icons/Python.svg" class="icon" alt="Python"></img>
+	<img src="assets/icons/MatLab.svg" class="icon" alt="MatLab"></img>
+	<img src="assets/icons/Java.svg" class="icon" alt="Java"></img>
+	<img src="assets/icons/Javascript.svg" class="icon" alt="Javascript"></img>
+</div>
+
+<h3>Libraries</h3>
+<div class="category">
+	<img src="assets/icons/Tensorflow.svg" class="icon" alt="Tensorflow"></img>
+	<img src="assets/icons/PyTorch.svg" class="icon" alt="PyTorch"></img>
+	<img src="assets/icons/NumPy.svg" class="icon" alt="NumPy"></img>
+	<img src="assets/icons/Pandas.svg" class="icon" alt="Pandas"></img>
+	<img src="assets/icons/OpenCV.svg" class="icon" alt="OpenCV"></img>
+	<img src="assets/icons/AutoKeras.svg" class="icon" alt="AutoKeras"></img>
+	<img src="assets/icons/Scikit-Learn.svg" class="icon" alt="Scikit-Learn"></img>
+</div>
+
+<h3>Web-Development and Tools</h3>
+<div class="category">
+	<img src="assets/icons/HTML.svg" class="icon" alt="HTML"></img>
+	<img src="assets/icons/CSS.svg" class="icon" alt="CSS"></img>
+	<img src="assets/icons/Nodejs.svg" class="icon" alt="Nodejs"></img>
+	<img src="assets/icons/SQLite.svg" class="icon" alt="SQLite"></img>
+	<img src="assets/icons/Ubuntu.svg" class="icon" alt="Ubuntu"></img>
+	<img src="assets/icons/LaTeX.svg" class="icon" alt="LaTeX"></img>
+</div>
+<br/>
+<br/>
+
+<!-- Publications and Projects -->
+<style>
+	.row_container {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /*fraction*/
+		grid-column-gap: 1%;
+	}
+  
+	.row_section {
+		/* border: 1px solid; */
+		text-align: center
+	}
+  
+	@media (max-width: 1000px) {
+		.row_container {
+		grid-template-columns: none;
+		}
+	}
+  </style>
+  
+
+<div class="row_container">
+	<div class="row_section">
+		<h1>Projects</h1>
+		<a href="Projects.html">
+			<img src="assets/imgs/Video-Classification.png"
+			onmouseover="this.src='assets/imgs/Video-Classification.png';"
+			onmouseout="this.src='assets/imgs/Video-Classification.png';"
+			></img>
+		</a>
+		<p style="text-align:center">Projects</p>
+		<button onclick="location.href='Projects.html'">
+			Read More
+		</button>
+	</div>
+
+	<div class="row_section">
+	<h1>Publications</h1>
+	<a href="Publications.html">
+		<img
+		src="assets/imgs/Modulation-Classification.png"
+		onmouseover="this.src='assets/imgs/Modulation-Classification.png';"
+		onmouseout="this.src='assets/imgs/Modulation-Classification.png';"
+		></img>
+	</a>
+	<p style="text-align:center">Published Research</p>
+	<button onclick="location.href='Publications.html'">
+		Read More
+	</button>
+	</div>
+</div>
+  
