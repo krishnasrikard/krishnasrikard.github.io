@@ -71,7 +71,13 @@ sidebar_sort_order: 2
 				<p></p>
 				<ul>
 					<li>
-						Comparing and understanding the performance of AutoML models with SOTA wireless signal classification models towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
+						Designing and exploring performance of AutoML models on classification of wireless signals.
+					</li>
+					<li>
+						Understanding effectiveness of AutoML models against transfer based white-box attacks to explain adversarial transferability of these attacks on AutoML models.
+					</li>
+					<li>
+						Compared the performance of AutoML models with state-of-the-art models in terms of classification, vulnerability and transferability.
 					</li>
 				</ul>
 			</td>
