@@ -6,7 +6,7 @@
 	{% if node.title != null %}
 		{% if node.layout == "category" %}
 			<a class="category-link {% if page.url == node.url %} active{% endif %}"
-				href="https://dks2000dks.github.io/{{node.title}}">{{ node.title }}</a>
+				href="{{ node.url | relative_url }}">{{ node.title }}</a>
 		{% endif %}
 	{% endif %}
 {% endfor %}
