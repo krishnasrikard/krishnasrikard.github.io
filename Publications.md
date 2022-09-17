@@ -49,7 +49,7 @@ sidebar_sort_order: 1
 				<strong>
 					1.
 				</strong>
-				<a href="https://ieeexplore.ieee.org/document/9668448">
+				<a href="https://ieeexplore.ieee.org/document/9668448" style="font-size: 1.125em">
 					<strong>AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
 				</a>
 				<br/>
