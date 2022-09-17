@@ -43,7 +43,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Autonomous-Driving">Reinforcement Learning for Autonomous Navigation</a>
+					<a href="https://github.com/dks2000dks/Autonomous-Driving" style="font-size: 1.125em">Reinforcement Learning for Autonomous Navigation</a>
 				</strong>
 				<br/>
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
@@ -64,7 +64,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Modulation-Classification">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</a>
+					<a href="https://github.com/dks2000dks/Modulation-Classification" style="font-size: 1.125em">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</a>
 				</strong>
 				<br/>
 				Guide: <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">Dr. SaiDhiraj Amuru</a>
@@ -88,7 +88,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Video-Classification">Natural and Adversarial Corruptions on Video Classification</a>
+					<a href="https://github.com/dks2000dks/Video-Classification" style="font-size: 1.125em">Natural and Adversarial Corruptions on Video Classification</a>
 				</strong>
 				<br/>
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
@@ -112,7 +112,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Hypothesis-Testing-vs-Binary-Classification">Binary Hypothesis Testing vs Machine Learning Binary Classification</a>
+					<a href="https://github.com/dks2000dks/Hypothesis-Testing-vs-Binary-Classification" style="font-size: 1.125em">Binary Hypothesis Testing vs Machine Learning Binary Classification</a>
 				</strong>
 				<br/>
 				Guide: <a href="https://iith.ac.in/math/sameen/" style="color:black;">Dr. Sameen Naqvi</a>
@@ -130,7 +130,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Image-Processing/tree/master/Social-Distancing-Detection">Social Distancing Detection</a>
+					<a href="https://github.com/dks2000dks/Image-Processing/tree/master/Social-Distancing-Detection" style="font-size: 1.125em">Social Distancing Detection</a>
 				</strong>
 				<p></p>
 				<ul>
@@ -146,7 +146,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/IIT-Hyderabad-Semester-Courses/blob/master/EE5602/HW0/HW0.ipynb">Hidden Markov Models</a>
+					<a href="https://github.com/dks2000dks/IIT-Hyderabad-Semester-Courses/blob/master/EE5602/HW0/HW0.ipynb" style="font-size: 1.125em">Hidden Markov Models</a>
 				</strong>
 				<br/>
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
@@ -164,7 +164,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Speech-and-Audio-Processing/tree/master/Music%20Generation">Music-Generation</a>
+					<a href="https://github.com/dks2000dks/Speech-and-Audio-Processing/tree/master/Music%20Generation" style="font-size: 1.125em">Music Generation</a>
 				</strong>
 				<p></p>
 				<ul>
@@ -180,7 +180,7 @@ sidebar_sort_order: 2
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://github.com/dks2000dks/Natural-Language-Processing/tree/master/Transliteration/English-Hindi">Transliteration</a>
+					<a href="https://github.com/dks2000dks/Natural-Language-Processing/tree/master/Transliteration/English-Hindi" style="font-size: 1.125em">Transliteration</a>
 				</strong>
 				<p></p>
 				<ul>

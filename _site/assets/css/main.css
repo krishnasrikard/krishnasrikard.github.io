@@ -381,7 +381,7 @@ body.project > * { max-height: 100vh; overflow-y: auto; -webkit-overflow-scrolli
 
 #sidebar nav > * { display: block; line-height: 1.75; }
 
-#sidebar nav > .icon { font-size: 1.5rem; display: inline-block; margin: 0 0.25em; }
+#sidebar nav > .icon { font-size: 1.5rem; display: inline-block; margin: 0 5px; }
 
 /* ----------------------------------------------------------- Sticky sidebar Set $sidebar-stick variable to affix sidebar contents to the bottom of the sidebar in tablets and up. ----------------------------------------------------------- */
 @media (min-width: 51rem) { body { align-items: flex-end; } }
