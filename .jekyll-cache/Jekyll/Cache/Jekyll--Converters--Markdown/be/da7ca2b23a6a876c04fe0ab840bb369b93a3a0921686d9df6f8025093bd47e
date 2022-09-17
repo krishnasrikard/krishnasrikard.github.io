@@ -1,9 +1,4 @@
----
-layout: category
-title: Projects
-sidebar_sort_order: 2
----
-<!-- Style for Publications Page -->
+I"É<!-- Style for Publications Page -->
 <style>
 	table {
 		width:100%;
@@ -32,10 +27,11 @@ sidebar_sort_order: 2
 		}
 	}
 </style>
+
 <p></p>
 
-<div markdown=1>
-<table>
+<div>
+  <table>
 	<tbody>
     	<tr>
 			<td>
@@ -45,7 +41,7 @@ sidebar_sort_order: 2
 				<strong>
 					<a href="https://github.com/dks2000dks/Autonomous-Driving">Reinforcement Learning for Autonomous Navigation</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
 				<p></p>
 				<ul>
@@ -66,18 +62,12 @@ sidebar_sort_order: 2
 				<strong>
 					<a href="https://github.com/dks2000dks/Modulation-Classification">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">Dr. SaiDhiraj Amuru</a>
 				<p></p>
 				<ul>
 					<li>
-						Designing and exploring performance of AutoML models on classification of wireless signals.
-					</li>
-					<li>
-						Understanding effectiveness of AutoML models against transfer based white-box attacks to explain adversarial transferability of these attacks on AutoML models.
-					</li>
-					<li>
-						Compared the performance of AutoML models with state-of-the-art models in terms of classification, vulnerability and transferability.
+						Comparing and understanding the performance of AutoML models with SOTA wireless signal classification models towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
 					</li>
 				</ul>
 			</td>
@@ -90,7 +80,7 @@ sidebar_sort_order: 2
 				<strong>
 					<a href="https://github.com/dks2000dks/Video-Classification">Natural and Adversarial Corruptions on Video Classification</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
 				<p></p>
 				<ul>
@@ -114,7 +104,7 @@ sidebar_sort_order: 2
 				<strong>
 					<a href="https://github.com/dks2000dks/Hypothesis-Testing-vs-Binary-Classification">Binary Hypothesis Testing vs Machine Learning Binary Classification</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://iith.ac.in/math/sameen/" style="color:black;">Dr. Sameen Naqvi</a>
 				<p></p>
 				<ul>
@@ -148,7 +138,7 @@ sidebar_sort_order: 2
 				<strong>
 					<a href="https://github.com/dks2000dks/IIT-Hyderabad-Semester-Courses/blob/master/EE5602/HW0/HW0.ipynb">Hidden Markov Models</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
 				<p></p>
 				<ul>
@@ -192,3 +182,5 @@ sidebar_sort_order: 2
     	</tr>
 	</tbody>
 </table>
+</div>
+:ET

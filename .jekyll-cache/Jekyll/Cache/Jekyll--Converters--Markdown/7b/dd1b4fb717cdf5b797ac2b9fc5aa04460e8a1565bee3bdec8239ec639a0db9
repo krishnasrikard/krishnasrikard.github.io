@@ -1,9 +1,4 @@
----
-layout: category
-title: Publications
-sidebar_sort_order: 1
----
-<!-- Style for Publications Page -->
+I"Ñ<!-- Style for Publications Page -->
 <style>
 	table {
 		width:100%;
@@ -32,10 +27,11 @@ sidebar_sort_order: 1
 		}
 	}
 </style>
+
 <p></p>
 
-<div markdown=1>
-<table>
+<div>
+  <table>
 	<tbody>
 		<tr>
       		<td><h2 style="color:tomato;">2022</h2></td>
@@ -52,9 +48,9 @@ sidebar_sort_order: 1
 				<a href="https://ieeexplore.ieee.org/document/9668448">
 					<strong>AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
 				</a>
-				<br/>
+				<br />
 				<a href="https://dks2000dks.github.io/" style="color:black;"><strong>K. S. Durbha</strong></a> and <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">S. Amuru</a>
-				<br/>
+				<br />
 				<p class="summary">
 					Comparing and understanding the performance of AutoML models with SOTA wireless signal classification models towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
 				</p>
@@ -63,3 +59,5 @@ sidebar_sort_order: 1
     	</tr>
 	</tbody>
 </table>
+</div>
+:ET

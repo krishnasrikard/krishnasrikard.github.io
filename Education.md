@@ -37,4 +37,5 @@ title: Education
 <br>
 
 <span style="font-size: 1.5rem; font-weight: 600; color:tomato; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;">Sri Telaprolu Bapanaiah English Medium High School, Vijayawada </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">June 2004 - April 2012</span>
+<h4 style="margin-top:0.25rem">Bachelor of Technology in Electrical Engineering</h4>
 <br>
