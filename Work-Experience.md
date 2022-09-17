@@ -7,6 +7,13 @@ title: Work-Experience
 <!-- Content of Work-Experience Page -->
 <div markdown=1>
 <p></p>
+<span style="font-size: 1.5rem; font-weight: 600; color:purple; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> Graduate Research Assistant at The University of Texas at Austin </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">Aug 2022 - Present</span>
+<ul>
+<li>I work under the guidance of Dr. Alan Bovik.</li>
+</ul>
+<br>
+
+<p></p>
 <span style="font-size: 1.5rem; font-weight: 600; color:purple; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> Application Development Intern at Oracle </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">May 2021 - July 2021</span>
 <ul>
 <li>Developed an Oracle Digital Assistant to give response and perform tasks that a user can perform on Oracle Journeys application.</li>
