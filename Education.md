@@ -7,10 +7,9 @@ title: Education
 <!-- Content of Work-Experience Page -->
 <div markdown=1>
 <p></p>
-<span style="font-size: 1.5rem; font-weight: 600; color:tomato; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> The Univeristy of Texas at Austin </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">August 2022 - Future</span>
+<span style="font-size: 1.5rem; font-weight: 600; color:tomato; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> The Univeristy of Texas at Austin </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">August 2022 - Present</span>
 <h4 style="margin-top:0.25rem">PhD in Electrical and Computer Engineering</h4>
 <ul>
-<li>Upcoming Student</li>
 </ul>
 <br>
 
@@ -26,6 +25,7 @@ title: Education
 <h4 style="margin-top:0.25rem">Intermediate Education</h4>
 <ul>
 <li><strong>Percentage</strong>: 96.5%</li>
+<li><strong>JEE-Mains AIR Rank</strong>: 1405</li>
 </ul>
 <br>
 
