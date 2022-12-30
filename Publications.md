@@ -49,8 +49,8 @@ sidebar_sort_order: 1
 				<strong>
 					1.
 				</strong>
-				<a href="https://ieeexplore.ieee.org/document/9668448" style="font-size: 1.125em">
-					<strong>AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
+				<a href="https://ieeexplore.ieee.org/document/9668448" style="font-size: 1.15em; color:#0000ff;">
+					<strong style="font-weight: 600">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
 				</a>
 				<br/>
 				<a href="https://dks2000dks.github.io/" style="color:black;"><strong>K. S. Durbha</strong></a> and <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">S. Amuru</a>
