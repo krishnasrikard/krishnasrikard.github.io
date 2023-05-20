@@ -1,9 +1,4 @@
----
-layout: category
-title: Publications
-sidebar_sort_order: 1
----
-<!-- Style for Publications Page -->
+I"4	<!-- Style for Publications Page -->
 <style>
 	table {
 		width:100%;
@@ -32,13 +27,14 @@ sidebar_sort_order: 1
 		}
 	}
 </style>
+
 <p></p>
 
- <!-- Publications -->
+<p><!-- Publications --></p>
 
- <!-- AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks -->
-<div markdown=1>
-<table>
+<p><!-- AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks --></p>
+<div>
+  <table>
 	<tbody>
 		<tr>
       		<td><h2 style="color:tomato;">2022</h2></td>
@@ -55,9 +51,9 @@ sidebar_sort_order: 1
 				<a href="https://ieeexplore.ieee.org/document/9668448" style="font-size: 1.15em; color:#0000ff;">
 					<strong style="font-weight: 600">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
 				</a>
-				<br/>
+				<br />
 				<a href="https://krishnasrikard.github.io/" style="color:black;"><strong>K. S. Durbha</strong></a> and <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">S. Amuru</a>
-				<br/>
+				<br />
 				<p class="summary">
 					Comparing and understanding the performance of AutoML models with state-of-the-art models on wireless signal classification and their vulnerability towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
 				</p>
@@ -66,3 +62,5 @@ sidebar_sort_order: 1
     	</tr>
 	</tbody>
 </table>
+</div>
+:ET
