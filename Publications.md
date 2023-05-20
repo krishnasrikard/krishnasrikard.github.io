@@ -34,6 +34,9 @@ sidebar_sort_order: 1
 </style>
 <p></p>
 
+ <!-- Publications -->
+
+ <!-- AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks -->
 <div markdown=1>
 <table>
 	<tbody>
@@ -56,9 +59,9 @@ sidebar_sort_order: 1
 				<a href="https://krishnasrikard.github.io/" style="color:black;"><strong>K. S. Durbha</strong></a> and <a href="https://people.iith.ac.in/asaidhiraj/" style="color:black;">S. Amuru</a>
 				<br/>
 				<p class="summary">
-					Comparing and understanding the performance of AutoML models with SOTA wireless signal classification models towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
+					Comparing and understanding the performance of AutoML models with state-of-the-art models on wireless signal classification and their vulnerability towards transfer-based Projected Gradient Descent and Carlini-Wagner adversarial attacks.
 				</p>
-				[<a href="https://ieeexplore.ieee.org/document/9668448" style="color:red; font-weight:bold">Paper</a>] [<a href="https://github.com/krishnasrikard/Modulation-Classification" style="color:red; font-weight:bold">Code</a>]
+				[<a href="https://ieeexplore.ieee.org/document/9668448" style="color:red; font-weight:bold">Paper</a>] [<a href="https://github.com/krishnasrikard/AutoML-Models-for-Wireless-Signals-Classification-and-effectiveness-against-Adversarial-Attacks" style="color:red; font-weight:bold">Code</a>]
 			</td>
     	</tr>
 	</tbody>
