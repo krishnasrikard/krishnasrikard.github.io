@@ -17,9 +17,8 @@ title: Work-Experience
 <p></p>
 <span style="font-size: 1.45rem; font-weight: 600; color:DarkGreen; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> Application Development Intern at Oracle </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">May 2021 - July 2021</span>
 <ul>
-<li>Developed an AI-powered <b>conversational interface</b> with Oracle Digital Assistant, leveraging <b>Natural Language Understanding</b> to automate user interactions and tasks within the Journeys application.</li>
-<li>Curated a comprehensive training dataset to optimize the chatbot's <b>intent classification</b> and <b>entity recognition</b> capabilities, underpinning its ability to accurately interpret user queries and perform actions within the Journeys application.</li>
-<li>Architected the backend infrastructure, integrating the chatbot with the Journeys ecosystem using <i>RestAPI</i>, <i>OBotML</i>, <i>Client Web SDK</i>, and <i>Oracle HCM Cloud</i>, facilitating seamless data flow and functionality. Ensured code quality and reliability through comprehensive testing practices, utilizing <i>Mocha Chai</i> and <i>Jasmine frameworks</i>.</li>
+<li> Developed an Oracle Digital Assistant a <strong>predictive chatbot</strong> that uses <strong>Natural Language Understanding</strong> to give responses and perform tasks as per user’s requests. Chatbot is designed in a way that it can perform all the operations that a user can do in the Journeys application.</li>
+<li>Created a dataset for training the chatbot to classify the <strong>intents</strong> and identify <strong>key entities</strong>.  Worked on the backend functioning of the chatbot and integrating it with the Journeys application using <i>RestAPI, OBotML, Client Web SDK</i> and <i>Oracle HCM Cloud</i>. Used tools like <i>Mocha Chai</i> and <i>Jasmine</i> frameworks for testing and <i>JSDoc</i> for writing documentation.</li>
 </ul>
 <br>
 
