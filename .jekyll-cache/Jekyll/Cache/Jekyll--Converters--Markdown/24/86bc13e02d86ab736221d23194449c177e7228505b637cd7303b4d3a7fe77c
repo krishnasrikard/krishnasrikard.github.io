@@ -1,9 +1,4 @@
----
-layout: category
-title: Projects
-sidebar_sort_order: 2``
----
-<!-- Style for Projects Page -->
+I"%"<!-- Style for Projects Page -->
 <style>
 	table {
 		width:100%;
@@ -32,10 +27,11 @@ sidebar_sort_order: 2``
 		}
 	}
 </style>
+
 <p></p>
 
-<div markdown=1>
-<table>
+<div>
+  <table>
 	<tbody>
 		<!-- Bitrate Ladder Construction using Visual Information Fidelity -->
 		<tr>
@@ -46,7 +42,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://arxiv.org/abs/2312.07780v1" style="font-size: 1.15em; color:#0073e6; font-weight:600">Bitrate Ladder Construction using Visual Information Fidelity</a>
 				</strong>
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>
@@ -73,7 +69,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://github.com/krishnasrikard/SR-DDPM" style="font-size: 1.15em; color:#0073e6; font-weight:600">An Efficient Approach to Super-Resolution with Fine-Tuning Diffusion Models</a>
 				</strong>
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>
@@ -97,7 +93,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://github.com/krishnasrikard/Optical-Flow-Less-Video-Frame-Interpolation" style="font-size: 1.15em; color:#0073e6; font-weight:600">Optical Flow Less Video Frame Interpolation</a>
 				</strong>
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>
@@ -121,7 +117,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://github.com/krishnasrikard/Saliency-Maps-NR-IQA-Classification-Models" style="font-size: 1.15em; color:#0073e6; font-weight:600">Similarities between local-patch quality maps of NR IQA algorithms and saliency maps of computer vision classification models</a>
 				</strong>
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>
@@ -145,7 +141,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://github.com/krishnasrikard/Autonomous-Driving" style="font-size: 1.15em; color:#0073e6; font-weight:600">Reinforcement Learning for Autonomous Navigation of Cars</a>
 				</strong>
-				<br/>
+				<br />
 				Guide: <a href="https://people.iith.ac.in/sumohana/" style="color:black;">Dr. Sumohana S. Channappayya</a>
 				<p></p>
 				<ul>
@@ -167,7 +163,7 @@ sidebar_sort_order: 2``
 				<strong>
 					<a href="https://github.com/krishnasrikard/Effects-of-reduced-frame-corruptions-on-video-classification" style="font-size: 1.15em; color:#0073e6; font-weight:600">Effects of reduced frame corruptions on video classification</a>
 				</strong>
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>
@@ -184,3 +180,5 @@ sidebar_sort_order: 2``
     	</tr>
 	</tbody>
 </table>
+</div>
+:ET
