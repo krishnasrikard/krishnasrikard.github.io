@@ -14,7 +14,15 @@ title: Work-Experience
 </ul>
 <br>
 
-<p></p>
+<span style="font-size: 1.45rem; font-weight: 600; color:DarkGreen; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> Wireless Intern at Skydio </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">May 2024 - July 2024</span>
+<ul>
+<li>Worked on improving the quality of video streamed from the drone to the controller by employing <b>adaptive video streaming</b> and <b>video quality assessment techniques</b>.</li>
+<li>Curated a comprehensive dataset of videos by conducting experiments to demonstrate the necessity of <b>frame-rate changes</b> under different visual environments, user requirements, and severe network conditions.</li>
+<li>Experimented with <b>GoP size</b> and <b>resolutions</b> for live video streaming under bitrate settings, frame-rate settings, different visual environments, and network conditions.</li>
+<li> Proposed both <b>simple and complex frame-rate switching mechanisms</b> for different perceptual conditions, flying environments, and network conditions, etc using various visual features, feedback from drones, etc. </li>
+</ul>
+<br>
+
 <span style="font-size: 1.45rem; font-weight: 600; color:DarkGreen; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> Application Development Intern at Oracle </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">May 2021 - July 2021</span>
 <ul>
 <li>Developed an AI-powered <b>conversational interface</b> with Oracle Digital Assistant, leveraging <b>Natural Language Understanding</b> to automate user interactions and tasks within the Journeys application.</li>

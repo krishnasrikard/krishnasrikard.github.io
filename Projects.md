@@ -37,30 +37,27 @@ sidebar_sort_order: 2
 <div markdown=1>
 <table>
 	<tbody>
-		<!-- Bitrate Ladder Construction using Visual Information Fidelity -->
+		<!-- White-Box Cartoonization -->
 		<tr>
 			<td>
-	  			<img class="icon" src="../assets/imgs/Projects/Bitrate-Ladder-Construction-using-Visual-Information-Fidelity.png" onmouseover="this.src='../assets/imgs/Projects/Bitrate-Ladder-Construction-using-Visual-Information-Fidelity.png;" onmouseout="this.src='../assets/imgs/Projects/Bitrate-Ladder-Construction-using-Visual-Information-Fidelity.png;" />
+	  			<img class="icon" src="../assets/imgs/Projects/White-Box-Cartoonization-1.jpg" onmouseover="this.src='../assets/imgs/Projects/White-Box-Cartoonization-2.jpg';" onmouseout="this.src='../assets/imgs/Projects/White-Box-Cartoonization-1.jpg';" />
 			</td>
       		<td class="paper_text">
 				<strong>
-					<a href="https://arxiv.org/abs/2312.07780v1" style="font-size: 1.15em; color:#0073e6; font-weight:600">Bitrate Ladder Construction using Visual Information Fidelity</a>
+					<a href="https://github.com/krishnasrikard/White-Box-Cartoonization" style="font-size: 1.15em; color:#0073e6; font-weight:600">Impact of Backbone Models and Dataset on Cartoonization Performance</a>
 				</strong>
 				<br/>
 				<p></p>
 				<ul>
 					<li>
-						Proposed features drawn from <b>Visual Information Fidelity</b> (VIF) (VIF features) are extracted from uncompressed videos to predict the visual quality (VMAF) of compressed videos.
-					</li>
-					<li>
-						Presented multiple VIF feature sets extracted from different <b>scales</b> and <b>subbands</b> of a video to tackle the problem of bitrate ladder construction.
-					</li>
-					<li>
-						Achieved significant <b>bjontegaard delta gains</b> against fixed bitrate ladder and achieved performance close to optimal per-title bitrate ladder constructed from exhaustive encoding.
-					</li>
-					<li>
-						Submitted in <b>Picture Coding Symposium 2024</b>.
-					</li>
+					Explored the <b>impact of backbone architecture namely VGG19 and ViT-B/16</b> in the cartoonization process particularly in <b>structural and content loss functions</b>.
+                    </li>
+                    <li>
+					Creating and Understanding a cartoonization process to a <b>specific style to cartoon</b> rather than a collection of styles.
+                    </li>
+                    <li>
+					Observed a <b>high color pallet and coarse surface</b> with a transformer backbone (ViT) rather than a CNN backbone (VGG19). We also observed an improvement in the cartoonization process as the size of the dataset increases particularly the ViT backbone.
+                    </li>
 				</ul>
 			</td>
     	</tr>

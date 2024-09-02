@@ -10,8 +10,8 @@ title: Education
 <span style="font-size: 1.40rem; font-weight: 600; color:Indigo; line-height: 1.25; margin-top: 1rem; margin-bottom: 0.5rem;"> The Univeristy of Texas at Austin </span><span style="float: right; line-height: 1.25; margin-top: 0.25rem; margin-bottom: 0.5rem;">August 2022 - Present</span>
 <h4 style="margin-top:0.25rem">Ph.D in Electrical and Computer Engineering</h4>
 <ul>
-<li><strong>CGPA</strong>: 3.75/4</li>
-<li><strong>Courses</strong>: Advanced Topics in Computer Vision, Digital Video, Probability and Stochastic Processes-1, Vision Systems, Statistical Methods-1, Algorithms, Applied Machine Learning, etc.</li>
+<li><strong>CGPA</strong>: 3.8/4</li>
+<li><strong>Courses</strong>:  Generative Models in Machine Learning, Advanced Topics in Computer Vision, Digital Video, Applied Machine Learning, Vision Systems, etc</li>
 </ul>
 <br>
 
@@ -19,7 +19,7 @@ title: Education
 <h4 style="margin-top:0.25rem">B.Tech in Electrical Engineering</h4>
 <ul>
 <li><strong>CGPA</strong>: 9.11/10</li>
-<li><strong>Courses</strong>: Image and Video Processing, Representation Learning, Probabilistic Graphical Models, Statistical Inference, Applied Statistics, Random Processes, Information Sciences, Advanced Digital Signal Processing, Detection Theory, Estimation Theory, etc.</li>
+<li><strong>Courses</strong>: Image and Video Processing, Representation Learning, Probabilistic Graphical Models, Statistical Inference, Advanced Digital Signal Processing, Detection Theory, Estimation Theory, etc.</li>
 </ul>
 <br>
 

@@ -1,9 +1,4 @@
----
-layout: category
-title: Publications
-sidebar_sort_order: 1
----
-<!-- Style for Publications Page -->
+I"<!-- Style for Publications Page -->
 <style>
 	table {
 		width:100%;
@@ -32,12 +27,13 @@ sidebar_sort_order: 1
 		}
 	}
 </style>
+
 <p></p>
 
 <!-- Publications -->
 
-<div markdown=1>
-<table>
+<div>
+  <table>
 	<tbody>
 		<tr>
       		<td><h2 style="color:tomato;">2024</h2></td>
@@ -51,9 +47,9 @@ sidebar_sort_order: 1
 				<a href="https://ieeexplore.ieee.org/document/10566405" style="font-size: 1.15em; color:#0000ff;">
 					<strong style="font-weight: 600">Bitrate Ladder Construction Using Visual Information Fidelity</strong>
 				</a>
-				<br/>
+				<br />
 				<strong>Krishna Srikar Durbha</strong>, Hassene Tmar, Cosmin Stejerean, Ioannis Katsavounidis, and Alan C. Bovik
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>We deploy features drawn from <b>Visual Information Fidelity (VIF) (VIF features)</b> extracted from uncompressed videos to <b>predict the visual quality (VMAF)</b> of compressed videos.</li>
@@ -67,7 +63,7 @@ sidebar_sort_order: 1
 	</tbody>
 </table>
 
-<table>
+  <table>
 	<tbody>
 		<tr>
       		<td><h2 style="color:tomato;">2022</h2></td>
@@ -81,9 +77,9 @@ sidebar_sort_order: 1
 				<a href="https://ieeexplore.ieee.org/document/9668448" style="font-size: 1.15em; color:#0000ff;">
 					<strong style="font-weight: 600">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</strong>
 				</a>
-				<br/>
+				<br />
 				<strong>Krishna Srikar Durbha</strong> and SaiDhiraj Amuru
-				<br/>
+				<br />
 				<p></p>
 				<ul>
 					<li>We designed <b>AutoML models</b> of four different architectures namely Deep Residual Network (ResNet), Convolutional Long Short-Term Deep Neural Network (CLDNN), Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN)</li>
@@ -96,3 +92,5 @@ sidebar_sort_order: 1
     	</tr>
 	</tbody>
 </table>
+</div>
+:ET

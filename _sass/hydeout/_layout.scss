@@ -201,8 +201,9 @@ body {
     }
 
     > * {
-      max-width: 45rem;
-      padding: 0;
+      min-width: 61rem;
+      max-width: 61rem;
+      padding: 0 0 0 1rem;
     }
   }
 }
