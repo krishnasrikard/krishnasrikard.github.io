@@ -376,6 +376,70 @@ section {
 }
 
 /* ========================================
+   Landscape Cards (Experience & Ongoing Research)
+   ======================================== */
+.landscape-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.landscape-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-glow);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  transition: var(--transition-smooth);
+}
+
+.landscape-item:hover {
+  border-color: var(--border-hover);
+  transform: translateX(4px);
+}
+
+.lc-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lc-title {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.lc-meta {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-glow);
+}
+
+.lc-sub {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-link);
+}
+
+.lc-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.4rem 0 0;
+}
+
+/* Tie the Ongoing Research landscape card to the green "Active" accent */
+.section-ongoing .landscape-item {
+  border-left-color: #10b981;
+}
+
+.section-ongoing .lc-meta {
+  color: #10b981;
+}
+
+/* ========================================
    Section Divider Styling
    ======================================== */
 .section-ongoing h2 {
@@ -388,6 +452,10 @@ section {
 
 .section-published h2 {
   border-color: var(--accent-glow);
+}
+
+.section-projects h2 {
+  border-color: #c084fc;
 }
 
 .section-label {
@@ -421,6 +489,12 @@ section {
   background: rgba(59, 130, 246, 0.12);
   color: #60a5fa;
   border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.section-projects .section-label {
+  background: rgba(192, 132, 252, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(192, 132, 252, 0.25);
 }
 
 /* ========================================
@@ -531,6 +605,29 @@ section {
   font-size: 0.8rem;
   color: var(--text-muted);
   font-style: italic;
+}
+
+/* Keyword chips on project cards */
+.card-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.card-keywords span {
+  padding: 4px 10px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.card-keywords span:hover {
+  border-color: var(--accent-glow);
+  color: var(--text-main);
 }
 
 /* ========================================
