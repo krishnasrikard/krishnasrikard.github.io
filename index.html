@@ -14,85 +14,83 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Resolve the stored theme before first paint to avoid a flash of the wrong palette. -->
+	<script>
+	(function () {
+		document.documentElement.classList.add('js');
+		try {
+			var saved = localStorage.getItem('theme');
+			if (saved) {
+				document.documentElement.setAttribute('data-theme', saved);
+			} else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+				document.documentElement.setAttribute('data-theme', 'light');
+			}
+		} catch (e) {}
+	})();
+	</script>
 </head>
 
 
 <!-- Body Section -->
 <body>
-	<!-- Theme Toggle -->
-	<button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
-	<span class="icon-sun">&#9788;</span>
-	<span class="icon-moon">&#9790;</span>
-	</button>
+	<!-- Sticky Masthead: brand, section nav, theme toggle -->
+	<header class="masthead">
+		<div class="masthead-inner">
+		<a class="masthead-brand" href="#top">Krishna Srikar Durbha</a>
+		<nav class="masthead-nav" aria-label="Section navigation">
+			<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#publications">Publications</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#projects">Projects</a></li>
+			</ul>
+		</nav>
+		<!-- Theme Toggle -->
+		<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode">
+			<span class="icon-sun">&#9788;</span>
+			<span class="icon-moon">&#9790;</span>
+		</button>
+		</div>
+	</header>
 
-	<div class="site-wrapper">
+	<div class="layout" id="top">
 
-	<!-- Hero / Profile -->
-	<section class="hero animate-on-scroll">
-		<div class="hero-text">
-		<h1>Krishna Srikar Durbha</h1>
+	<!-- Sticky Profile Sidebar: photo, identity, social links -->
+	<aside class="sidebar">
+		<div class="profile-card">
+		<img class="profile-avatar" src="images/Me.png" alt="Krishna Srikar Durbha">
+		<div class="profile-identity">
+			<h1 class="profile-name">Krishna Srikar Durbha</h1>
+			<p class="profile-bio">Ph.D. Student<br>Electrical &amp; Computer Engineering</p>
+			<p class="profile-location">Austin, Texas</p>
+		</div>
+		<ul class="profile-links">
+			<li><a target="_blank" rel="noopener" href="mailto:krishna.durbha@utexas.edu"><img src="images/icons/mail.png" alt=""> Email</a></li>
+			<li><a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=kUtZ75kAAAAJ&hl=en"><img src="images/icons/google_scholar.png" alt=""> Google Scholar</a></li>
+			<li><a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/"><img src="images/icons/github.png" alt=""> GitHub</a></li>
+			<li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/krishna-srikar-durbha/"><img src="images/icons/linkedin.png" alt=""> LinkedIn</a></li>
+			<li><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1KVk79zznz4ILYq1_kmkNOTOIX49CnAF6/view?usp=sharing"><img src="images/icons/resume.png" alt=""> Resume</a></li>
+		</ul>
+		</div>
+	</aside>
+
+	<!-- Main Content Column -->
+	<main class="content">
+
+		<!-- About / Hero -->
+		<section id="about" class="animate-on-scroll">
+		<h2>About Me</h2>
 		<p>
 			I am a fourth-year Ph.D. student at the <a target="_blank" rel="noopener" href="https://live.ece.utexas.edu/">Laboratory of Image and Video Engineering</a>, <a target="_blank" rel="noopener" href="https://www.utexas.edu/">The University of Texas at Austin</a>, advised by <a target="_blank" rel="noopener" href="https://www.ece.utexas.edu/people/faculty/alan-bovik">Prof. Alan Bovik</a>. I collaborate with the <strong>Meta Video Infrastructure Team</strong> on Video Engineering and Perceptual Quality Optimization.
 		</p>
 		<p>
 			My current research advances <strong>generative modeling for vision</strong> and <strong>Multimodal Large Language Models (MLLMs)</strong> &mdash; investigating few-step generation frameworks, MeanFlows, and visual grounding. Building on my prior work in representation learning and perceptual quality assessment (IQA/VQA), I design and train generative and multimodal models that are semantically faithful and perceptually high-fidelity.
 		</p>
-		<div class="social-links">
-			<a target="_blank" rel="noopener" class="social-link" href="mailto:krishna.durbha@utexas.edu">
-			<img src="images/icons/mail.png" alt="Email"> Email
-			</a>
-			<a target="_blank" rel="noopener" class="social-link" href="https://scholar.google.com/citations?user=kUtZ75kAAAAJ&hl=en">
-			<img src="images/icons/google_scholar.png" alt="Google Scholar"> Scholar
-			</a>
-			<a target="_blank" rel="noopener" class="social-link" href="https://github.com/krishnasrikard/">
-			<img src="images/icons/github.png" alt="GitHub"> GitHub
-			</a>
-			<a target="_blank" rel="noopener" class="social-link" href="https://www.linkedin.com/in/krishna-srikar-durbha/">
-			<img src="images/icons/linkedin.png" alt="LinkedIn"> LinkedIn
-			</a>
-			<a target="_blank" rel="noopener" class="social-link" href="https://drive.google.com/file/d/1KVk79zznz4ILYq1_kmkNOTOIX49CnAF6/view?usp=sharing">
-			<img src="images/icons/resume.png" alt="Resume"> Resume
-			</a>
-		</div>
-		</div>
-		<div class="hero-photo">
-		<img src="images/Me.png" alt="Krishna Srikar Durbha">
-		</div>
-	</section>
-
-	<!-- Education & Research Interests -->
-	<section class="animate-on-scroll">
-		<div class="info-grid">
-		<div class="info-card">
-			<h2>Education</h2>
-			<ul class="education-list">
-			<li>
-				<div class="edu-icon">
-				<img src="images/icons/education.png" alt="">
-				</div>
-				<div>
-				<span class="degree">Ph.D. in Electrical and Computer Engineering</span><br>
-				<small>2022 - Present</small><br>
-				<span class="institution">The University of Texas at Austin</span><br>
-				<span><strong>Advisor:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=en&user=p-PC50wAAAAJ">Dr. Alan C. Bovik</a></span>
-				<!-- <span><strong>Advisor:</strong> Prof. Alan Bovik</span> -->
-				</div>
-			</li>
-			<li>
-				<div class="edu-icon">
-				<img src="images/icons/education.png" alt="">
-				</div>
-				<div>
-				<span class="degree">Bachelor of Technology in Electrical Engineering</span><br>
-				<small>2018 - 2022</small><br>
-				<span class="institution">Indian Institute of Technology Hyderabad</span>
-				</div>
-			</li>
-			</ul>
-		</div>
-		<div class="info-card">
-			<h2>Research Interests</h2>
-			<ul class="research-interests">
+		<h3 class="subhead">Research Interests</h3>
+		<ul class="research-interests">
 			<li>Generative Modeling</li>
 			<li>Image and Video Representation Learning</li>
 			<li>Perceptual Quality Assessment</li>
@@ -100,239 +98,273 @@
 			<li>Computer Vision</li>
 			<li>Image and Video Processing</li>
 			<li>Video Streaming Optimization</li>
-			</ul>
-		</div>
-		</div>
-	</section>
+		</ul>
+		</section>
 
-	<!-- News -->
-	<section class="animate-on-scroll">
+		<!-- Education -->
+		<section id="education" class="animate-on-scroll">
+		<h2>Education</h2>
+		<ul class="education-list">
+			<li>
+			<div class="edu-icon"><img src="images/icons/education.png" alt=""></div>
+			<div>
+				<span class="degree">Ph.D. in Electrical and Computer Engineering</span><br>
+				<small>2022 - Present</small><br>
+				<span class="institution">The University of Texas at Austin</span><br>
+				<span><strong>Advisor:</strong> <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=en&user=p-PC50wAAAAJ">Dr. Alan C. Bovik</a></span>
+			</div>
+			</li>
+			<li>
+			<div class="edu-icon"><img src="images/icons/education.png" alt=""></div>
+			<div>
+				<span class="degree">Bachelor of Technology in Electrical Engineering</span><br>
+				<small>2018 - 2022</small><br>
+				<span class="institution">Indian Institute of Technology Hyderabad</span>
+			</div>
+			</li>
+		</ul>
+		</section>
+
+		<!-- News -->
+		<section id="news" class="animate-on-scroll">
 		<h2>News</h2>
 		<ul class="news-list">
-		<li><span class="news-date">01/2026</span><span>Passed my PhD Progress Review.</span></li>
-		<li><span class="news-date">09/2025</span><span>Completed my PhD candidate evaluation.</span></li>
-		<li><span class="news-date">07/2025</span><span>My paper <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695">Constructing Per-Shot Bitrate Ladders Using Visual Information Fidelity</a> has been accepted to IEEE Transactions on Image Processing.</span></li>
-		<li><span class="news-date">07/2025</span><span>My paper <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2507.17240">Perceptual Classifiers: Detecting Generative Images using Perceptual Features</a> has been accepted to the VQualA Workshop at ICCV 2025.</span></li>
-		<li><span class="news-date">05/2025</span><span>Excited to join the MPI team at Samsung Research America.</span></li>
-		<li><span class="news-date">05/2024</span><span>Excited to join the Wireless team at Skydio.</span></li>
-		<li><span class="news-date">02/2024</span><span>My paper <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405">Bitrate Ladder Construction using Visual Information Fidelity</a> was accepted at PCS 2024.</span></li>
-		<li><span class="news-date">12/2023</span><span>Presented my work on Bitrate Ladder Construction at Video Quality Experts Group (VQEG) Meeting.</span></li>
+			<li><span class="news-date">01/2026</span><span>Passed my PhD Progress Review.</span></li>
+			<li><span class="news-date">09/2025</span><span>Completed my PhD candidate evaluation.</span></li>
+			<li><span class="news-date">07/2025</span><span>My paper <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695">Constructing Per-Shot Bitrate Ladders Using Visual Information Fidelity</a> has been accepted to IEEE Transactions on Image Processing.</span></li>
+			<li><span class="news-date">07/2025</span><span>My paper <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2507.17240">Perceptual Classifiers: Detecting Generative Images using Perceptual Features</a> has been accepted to the VQualA Workshop at ICCV 2025.</span></li>
+			<li><span class="news-date">05/2025</span><span>Excited to join the MPI team at Samsung Research America.</span></li>
+			<li><span class="news-date">05/2024</span><span>Excited to join the Wireless team at Skydio.</span></li>
+			<li><span class="news-date">02/2024</span><span>My paper <a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405">Bitrate Ladder Construction using Visual Information Fidelity</a> was accepted at PCS 2024.</span></li>
+			<li><span class="news-date">12/2023</span><span>Presented my work on Bitrate Ladder Construction at Video Quality Experts Group (VQEG) Meeting.</span></li>
 		</ul>
-	</section>
+		</section>
 
-	<!-- Ongoing Research -->
-	<section class="section-ongoing animate-on-scroll">
-		<h2>Ongoing Research</h2><span class="section-label">Active</span>
+		<!-- Ongoing Research -->
+		<section id="research" class="section-ongoing animate-on-scroll">
+		<h2>Ongoing Research<span class="section-label">Active</span></h2>
 		<ul class="landscape-list">
-		<li class="landscape-item">
+			<li class="landscape-item">
 			<div class="lc-head">
-			<span class="lc-title">MeanFlows for Few-Step Generation</span>
-			<span class="lc-meta">In Progress</span>
+				<span class="lc-title">MeanFlows for Few-Step Generation</span>
+				<span class="lc-meta">In Progress</span>
 			</div>
 			<p class="lc-desc">Investigating MeanFlows as a framework for efficient few-step generation, training generative models that synthesize high-fidelity samples in a handful of sampling steps.</p>
-		</li>
-		<li class="landscape-item">
+			</li>
+			<li class="landscape-item">
 			<div class="lc-head">
-			<span class="lc-title">Visual Grounding of Multimodal LLMs</span>
-			<span class="lc-meta">In Progress</span>
+				<span class="lc-title">Visual Grounding of Multimodal LLMs</span>
+				<span class="lc-meta">In Progress</span>
 			</div>
 			<p class="lc-desc">Studying visual grounding techniques for Multimodal Large Language Models, improving how they localize and reason over visual content to produce semantically faithful, perceptually high-fidelity outputs.</p>
-		</li>
+			</li>
 		</ul>
-	</section>
+		</section>
 
-	<!-- Preprints & Under Review -->
-	<section class="section-preprints animate-on-scroll">
-		<h2>Preprints &amp; Under Review</h2><span class="section-label">Submitted</span>
-		<div class="portfolio-grid">
+		<!-- Publications: Preprints & Under Review + Published Papers -->
+		<section id="publications" class="animate-on-scroll">
+		<h2>Publications</h2>
 
-		<article class="project-card">
-			<img class="card-image" src="images/SSL-VEC.png" alt="A Self-Supervised Learning Framework for Video Encoding Complexity Clustering">
-			<h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29166">A Self-Supervised Learning Framework for Video Encoding Complexity Clustering</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>,
-			H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29166"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<span class="card-status">Under Review &mdash; WACV 2027</span>
+		<div class="pub-group pub-group--review">
+			<h3 class="group-title">Preprints &amp; Under Review<span class="section-label">Submitted</span></h3>
+
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/SSL-VEC.png" alt="A Self-Supervised Learning Framework for Video Encoding Complexity Clustering">
 			</div>
-		</article>
-
-		<article class="project-card">
-			<img class="card-image" src="images/SLIDE-IQA.png" alt="Spatially Localized Image Degradation Embeddings for Image Quality Assessment">
-			<h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29162">Spatially Localized Image Degradation Embeddings for Image Quality Assessment</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>,
-			H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29162"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<span class="card-status">Under Review &mdash; NeurIPS 2026</span>
+			<div class="paper-box-text">
+				<span class="venue-chip">WACV 2027</span>
+				<h4><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29166">A Self-Supervised Learning Framework for Video Encoding Complexity Clustering</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span>, H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik</p>
+				<p class="paper-venue">Under Review</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29166"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				</div>
 			</div>
-		</article>
+			</article>
 
-		<article class="project-card">
-			<img class="card-image" src="images/Leveraging-Compression-Per-Shot-Bitrate-Ladder.png" alt="Transferable Bitrate Ladders">
-			<h3><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2512.12952">Leveraging Compression to Construct Transferable Bitrate Ladders</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>,
-			H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2512.12952"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Leveraging-Compression-to-Construct-Transferable-Bitrate-Ladders-Working"><img src="images/icons/code.png" alt=""> Code</a>
-			<span class="card-status">Under Review &mdash; IEEE TIP</span>
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/SLIDE-IQA.png" alt="Spatially Localized Image Degradation Embeddings for Image Quality Assessment">
 			</div>
-		</article>
+			<div class="paper-box-text">
+				<span class="venue-chip">NeurIPS 2026</span>
+				<h4><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29162">Spatially Localized Image Degradation Embeddings for Image Quality Assessment</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span>, H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik</p>
+				<p class="paper-venue">Under Review</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2606.29162"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				</div>
+			</div>
+			</article>
 
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/Leveraging-Compression-Per-Shot-Bitrate-Ladder.png" alt="Leveraging Compression to Construct Transferable Bitrate Ladders">
+			</div>
+			<div class="paper-box-text">
+				<span class="venue-chip">IEEE TIP</span>
+				<h4><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2512.12952">Leveraging Compression to Construct Transferable Bitrate Ladders</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span>, H. Tmar, P. H. Wu, I. Katsavounidis, and A. C. Bovik</p>
+				<p class="paper-venue">Under Review</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2512.12952"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Leveraging-Compression-to-Construct-Transferable-Bitrate-Ladders-Working"><img src="images/icons/code.png" alt=""> Code</a>
+				</div>
+			</div>
+			</article>
 		</div>
-	</section>
 
-	<!-- Published Papers -->
-	<section class="section-published animate-on-scroll">
-		<h2>Published Papers</h2><span class="section-label">Peer-Reviewed</span>
-		<div class="author-legend">
-		<span><i class="legend-swatch swatch-first"></i> First Author</span>
-		<span><i class="legend-swatch swatch-equal"></i> Equal Contribution</span>
+		<div class="pub-group pub-group--published">
+			<h3 class="group-title">Published Papers<span class="section-label">Peer-Reviewed</span></h3>
+			<div class="author-legend">
+			<span><i class="legend-swatch swatch-first"></i> First Author</span>
+			<span><i class="legend-swatch swatch-equal"></i> Equal Contribution</span>
+			</div>
+
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/Perceptual-Classifiers.png" alt="Perceptual Classifiers: Detecting Generative Images using Perceptual Features">
+			</div>
+			<div class="paper-box-text">
+				<span class="venue-chip">ICCVW 2025</span>
+				<h4><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2507.17240">Perceptual Classifiers: Detecting Generative Images using Perceptual Features</a></h4>
+				<p class="paper-authors"><span class="author-equal">K. S. Durbha</span>, <span class="author-equal">A. K. Venkataramanan</span>, R. Sureddi, and A. C. Bovik</p>
+				<p class="paper-venue">IEEE/CVF International Conference on Computer Vision (ICCV) Workshops, 2025</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2507.17240"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Perceptual-Classifiers-Detecting-Generative-Images-using-Perceptual-Features"><img src="images/icons/code.png" alt=""> Code</a>
+				</div>
+			</div>
+			</article>
+
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/Constructing-Per-Shot-Ladders-using-VIF.png" alt="Constructing Per-Shot Bitrate Ladders using Visual Information Fidelity">
+			</div>
+			<div class="paper-box-text">
+				<span class="venue-chip">IEEE TIP</span>
+				<h4><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695">Constructing Per-Shot Bitrate Ladders using Visual Information Fidelity</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span> and A. C. Bovik</p>
+				<p class="paper-venue">IEEE Transactions on Image Processing, vol. 34, pp. 7093&ndash;7108, 2025</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Constructing-Per-Shot-Bitrate-Ladders-using-Visual-Information-Fidelity"><img src="images/icons/code.png" alt=""> Code</a>
+				</div>
+			</div>
+			</article>
+
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/Bitrate-Ladder-Construction-using-VIF.png" alt="Bitrate Ladder Construction Using Visual Information Fidelity">
+			</div>
+			<div class="paper-box-text">
+				<span class="venue-chip">PCS 2024</span>
+				<h4><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405">Bitrate Ladder Construction Using Visual Information Fidelity</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span>, H. Tmar, C. Stejerean, I. Katsavounidis, and A. C. Bovik</p>
+				<p class="paper-venue">Picture Coding Symposium (PCS), 2024</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Constructing-Per-Shot-Bitrate-Ladders-using-Visual-Information-Fidelity"><img src="images/icons/code.png" alt=""> Code</a>
+				</div>
+			</div>
+			</article>
+
+			<article class="paper-box">
+			<div class="paper-box-image">
+				<img src="images/AutoML.png" alt="AutoML Models for Wireless Signals Classification">
+			</div>
+			<div class="paper-box-text">
+				<span class="venue-chip">COMSNETS 2022</span>
+				<h4><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9668448">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</a></h4>
+				<p class="paper-authors"><span class="author-first">K. S. Durbha</span> and S. Amuru</p>
+				<p class="paper-venue">International Conference on Communication Systems and Networks (COMSNETS), 2022</p>
+				<div class="paper-links">
+				<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9668448"><img src="images/icons/research_paper.png" alt=""> Paper</a>
+				<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/AutoML-Models-for-Wireless-Signals-Classification-and-effectiveness-against-Adversarial-Attacks"><img src="images/icons/code.png" alt=""> Code</a>
+				</div>
+			</div>
+			</article>
 		</div>
-		<div class="portfolio-grid">
+		</section>
 
-		<article class="project-card">
-			<img class="card-image" src="images/Perceptual-Classifiers.png" alt="Perceptual Classifiers">
-			<h3><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2507.17240">Perceptual Classifiers: Detecting Generative Images using Perceptual Features</a></h3>
-			<p class="card-authors">
-			<span class="author-equal">K. S. Durbha</span>,
-			<span class="author-equal">A. K. Venkataramanan</span>,
-			R. Sureddi, and A. C. Bovik.
-			<br>IEEE/CVF International Conference on Computer Vision (ICCV) Workshops, 2025.
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2507.17240"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Perceptual-Classifiers-Detecting-Generative-Images-using-Perceptual-Features"><img src="images/icons/code.png" alt=""> Code</a>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<img class="card-image" src="images/Constructing-Per-Shot-Ladders-using-VIF.png" alt="Per-Shot Bitrate Ladders">
-			<h3><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695">Constructing Per-Shot Bitrate Ladders using Visual Information Fidelity</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>
-			and A. C. Bovik.
-			<br>IEEE Transactions on Image Processing, vol. 34, pp. 7093&ndash;7108, 2025.
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/11223695"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Constructing-Per-Shot-Bitrate-Ladders-using-Visual-Information-Fidelity"><img src="images/icons/code.png" alt=""> Code</a>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<img class="card-image" src="images/Bitrate-Ladder-Construction-using-VIF.png" alt="Bitrate Ladder VIF">
-			<h3><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405">Bitrate Ladder Construction Using Visual Information Fidelity</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>,
-			H. Tmar, C. Stejerean, I. Katsavounidis, and A. C. Bovik.
-			<br>Picture Coding Symposium (PCS), 2024.
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/10566405"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/Constructing-Per-Shot-Bitrate-Ladders-using-Visual-Information-Fidelity"><img src="images/icons/code.png" alt=""> Code</a>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<img class="card-image" src="images/AutoML.png" alt="AutoML">
-			<h3><a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9668448">AutoML Models for Wireless Signals Classification and their effectiveness against Adversarial Attacks</a></h3>
-			<p class="card-authors">
-			<span class="author-first">K. S. Durbha</span>
-			and S. Amuru.
-			<br>International Conference on Communication Systems and Networks (COMSNETS), 2022.
-			</p>
-			<div class="card-links">
-			<a target="_blank" rel="noopener" href="https://ieeexplore.ieee.org/document/9668448"><img src="images/icons/research_paper.png" alt=""> Paper</a>
-			<a target="_blank" rel="noopener" href="https://github.com/krishnasrikard/AutoML-Models-for-Wireless-Signals-Classification-and-effectiveness-against-Adversarial-Attacks"><img src="images/icons/code.png" alt=""> Code</a>
-			</div>
-		</article>
-
-		</div>
-	</section>
-
-	<!-- Experience -->
-	<section class="animate-on-scroll">
+		<!-- Experience -->
+		<section id="experience" class="animate-on-scroll">
 		<h2>Experience</h2>
 		<ul class="landscape-list">
-		<li class="landscape-item">
+			<li class="landscape-item">
 			<div class="lc-head">
-			<span class="lc-title">MPI Research Intern</span>
-			<span class="lc-meta">Summer 2025</span>
+				<span class="lc-title">MPI Research Intern</span>
+				<span class="lc-meta">Summer 2025</span>
 			</div>
 			<span class="lc-sub">Samsung Research America</span>
 			<p class="lc-desc">Built a generative framework for high-resolution 4K image synthesis, scaling state-of-the-art pretrained diffusion models to 4096&times;4096 with structural refinement methods that suppress synthesis artifacts and maximize perceptual quality and spatial consistency.</p>
-		</li>
-		<li class="landscape-item">
+			</li>
+			<li class="landscape-item">
 			<div class="lc-head">
-			<span class="lc-title">Wireless Systems Intern</span>
-			<span class="lc-meta">Summer 2024</span>
+				<span class="lc-title">Wireless Systems Intern</span>
+				<span class="lc-meta">Summer 2024</span>
 			</div>
 			<span class="lc-sub">Skydio</span>
 			<p class="lc-desc">Optimized drone-to-controller video streaming using adaptive streaming protocols and Video Quality Assessment (VQA), curating an empirical dataset and designing multi-tier frame-rate switching driven by visual features and real-time drone telemetry.</p>
-		</li>
-		<li class="landscape-item">
+			</li>
+			<li class="landscape-item">
 			<div class="lc-head">
-			<span class="lc-title">Application Development Intern</span>
-			<span class="lc-meta">Summer 2021</span>
+				<span class="lc-title">Application Development Intern</span>
+				<span class="lc-meta">Summer 2021</span>
 			</div>
 			<span class="lc-sub">Oracle</span>
 			<p class="lc-desc">Engineered an AI-powered conversational interface using Natural Language Understanding (NLU) for the Oracle Journeys application, integrating it with Oracle HCM Cloud via REST APIs and optimizing intent classification and entity recognition.</p>
-		</li>
+			</li>
 		</ul>
-	</section>
+		</section>
 
-	<!-- Projects -->
-	<section class="section-projects animate-on-scroll">
+		<!-- Projects -->
+		<section id="projects" class="section-projects animate-on-scroll">
 		<h2>Projects</h2>
 		<div class="portfolio-grid">
 
-		<article class="project-card text-card">
+			<article class="project-card">
 			<h3>Time-Constrained Representation Alignment (TC-REPA)</h3>
 			<p class="card-description">Tested restricting Representation Alignment (REPA) loss to high-noise timesteps on SiT-XL/2 flow-matching models, establishing that the effective axis for relaxing alignment is the training iteration, not the diffusion timestep.</p>
 			<div class="card-keywords">
-			<span>Diffusion Models</span>
-			<span>Representation Alignment</span>
-			<span>Flow Matching</span>
+				<span>Diffusion Models</span>
+				<span>Representation Alignment</span>
+				<span>Flow Matching</span>
 			</div>
-		</article>
+			</article>
 
-		<article class="project-card text-card">
+			<article class="project-card">
 			<h3>Per-Prompt Evaluation of Guidance Strategies in T2I Models</h3>
 			<p class="card-description">Benchmarked seven CFG-family guidance strategies across SDXL, PixArt-&Sigma;, SD3, and FLUX on T2I-CompBench++, revealing that aggregate FID/IS scores conceal compositional hallucinations exposed only by per-prompt distributional evaluation.</p>
 			<div class="card-keywords">
-			<span>Text-to-Image</span>
-			<span>Classifier-Free Guidance</span>
-			<span>Compositional Evaluation</span>
+				<span>Text-to-Image</span>
+				<span>Classifier-Free Guidance</span>
+				<span>Compositional Evaluation</span>
 			</div>
-		</article>
+			</article>
 
-		<article class="project-card text-card">
+			<article class="project-card">
 			<h3>High-Resolution 4K Synthesis using Few-Step Models</h3>
 			<p class="card-description">Benchmarked diffusion, flow-matching, consistency, and flow-map-matching models for 4K image synthesis, quantifying the perceptual-quality and inference-efficiency trade-offs between knowledge-distilled and principled few-step techniques.</p>
 			<div class="card-keywords">
-			<span>Few-Step Generation</span>
-			<span>High-Resolution Synthesis</span>
-			<span>Diffusion / Flow Matching</span>
+				<span>Few-Step Generation</span>
+				<span>High-Resolution Synthesis</span>
+				<span>Diffusion / Flow Matching</span>
 			</div>
-		</article>
+			</article>
 
 		</div>
-	</section>
+		</section>
 
-	<!-- Footer -->
-	<footer class="site-footer">
+		<!-- Footer -->
+		<footer class="site-footer">
 		Source code credit to <a href="https://jonbarron.info/" target="_blank" rel="noopener">Dr. Jon Barron</a> and Claude AI.
-	</footer>
+		</footer>
 
-  </div>
-  <script src="js/main.js"></script>
+	</main>
+	</div>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
